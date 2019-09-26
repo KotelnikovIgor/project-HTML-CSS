@@ -506,17 +506,23 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.header-section {
+  background-color: #fafcfe;
+  position: relative;
+}
+
 .header {
   margin: 0 auto;
-  background-image: url("../Images/Images/Sep-bot-min.jpg");
+  background-image: url("../Images/hero-01.jpg");
+  -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
+  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   background-repeat: no-repeat;
   width: 100%;
-  height: 960px;
+  min-height: 960px;
   background-size: cover;
   background-position: center bottom;
   text-align: center;
-  padding-top: 50px;
-  position: relative;
+  position: absolute;
 }
 
 .header__nav {
@@ -525,6 +531,9 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   padding: 0 15px;
   margin-bottom: 250px;
+  z-index: 5;
+  position: relative;
+  padding-top: 50px;
 }
 
 .nav__list {
@@ -633,7 +642,8 @@ input[type="radio"].visually-hidden {
   background-color: #2980b9;
 }
 
-.title__portfolio {
+.title__portfolio,
+.footer-title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -642,7 +652,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.title__portfolio::after {
+.title__portfolio::after,
+.footer-title::after {
   display: block;
   content: '';
   margin: 0 auto;
@@ -652,10 +663,17 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.clients__text-first {
+.clients__text-first,
+.footer-text {
   margin: 0 auto;
   max-width: 360px;
   text-align: center;
+}
+
+.icon1::before {
+  width: 67px;
+  height: 67px;
+  background-image: url("../Images/");
 }
 
 .services {
@@ -878,4 +896,45 @@ input[type="radio"].visually-hidden {
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+}
+
+.footer {
+  background-image: linear-gradient(rgba(27, 27, 27, 0.5), rgba(27, 27, 27, 0.5)), url("../Images/cont.jpg");
+  height: 750px;
+}
+
+.footer-title {
+  padding-top: 210px;
+  margin-bottom: 25px;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 75px;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0 83px;
+}
+
+.footer__link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  bottom: 0;
+}
+
+.icon1 {
+  background-image: url("../Images/Icons/footer/1.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 67px;
+  width: 67px;
 }
