@@ -510,10 +510,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   background-image: url("../Images/Images/Sep-bot-min.jpg");
   background-repeat: no-repeat;
-  width: 0 auto;
+  width: 100%;
   height: 960px;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   text-align: center;
   padding-top: 50px;
   position: relative;
