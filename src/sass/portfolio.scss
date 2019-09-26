@@ -6,10 +6,13 @@
 
 .portfolio {
   width: 100%;
-  height: 988px;
-  background-image: url("../images/portfolio_bg.jpg");
+  height: 990px;
+  background-color: $color-blue;
+  background-image: url("../images/portfolio.JPG");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  margin-bottom: 65px;
 }
 
 .portfolio__items {
