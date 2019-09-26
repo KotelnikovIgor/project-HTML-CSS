@@ -481,11 +481,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   line-height: 16px;
-<<<<<<< HEAD
-  outline: 1px solid red;
-=======
   color: #616161;
->>>>>>> dev
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -506,7 +502,6 @@ input[type="radio"].visually-hidden {
 
 .wrapper {
   max-width: 1170px;
-<<<<<<< HEAD
   text-align: center;
   margin: 0 auto;
 }
@@ -613,8 +608,6 @@ input[type="radio"].visually-hidden {
 
 .cients {
   padding-top: 65px;
-=======
-  margin: 0 auto;
 }
 
 .title__services,
@@ -775,5 +768,4 @@ input[type="radio"].visually-hidden {
 
 .portfolio__item:hover .overlay__text {
   opacity: 1;
->>>>>>> dev
 }
