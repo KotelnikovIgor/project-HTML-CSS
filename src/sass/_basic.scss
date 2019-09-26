@@ -14,8 +14,7 @@ body {
   font-family: $main-font-stack;
   font-size: 13px;
   line-height: 16px;
-  outline: 1px solid red;
-
+  color: $main-color-text;
 }
 
 .visually-hidden:not(:focus):not(:active),
