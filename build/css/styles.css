@@ -769,3 +769,7 @@ input[type="radio"].visually-hidden {
 .portfolio__item:hover .overlay__text {
   opacity: 1;
 }
+
+.officer_section {
+  background-color: #212121;
+}
