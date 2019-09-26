@@ -1,0 +1,37 @@
+%title-section-blue {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-blue;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    content: '';
+    margin: 0 auto;
+    width: 30px;
+    height: 5px;
+    margin-top: 16px;
+    background-color: $color-blue;
+  }
+}
+
+%title-section-white {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    content: '';
+    margin: 0 auto;
+    width: 30px;
+    height: 5px;
+    margin-top: 16px;
+    background-color: $color-white;
+  }
+}
