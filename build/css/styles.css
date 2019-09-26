@@ -605,3 +605,7 @@ input[type="radio"].visually-hidden {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.cients {
+  padding-top: 65px;
+}
