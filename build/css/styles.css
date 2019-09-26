@@ -631,7 +631,8 @@ input[type="radio"].visually-hidden {
   background-color: #2980b9;
 }
 
-.title__portfolio {
+.title__portfolio,
+.officer__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -640,7 +641,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.title__portfolio::after {
+.title__portfolio::after,
+.officer__title::after {
   display: block;
   content: '';
   margin: 0 auto;
@@ -772,4 +774,8 @@ input[type="radio"].visually-hidden {
 
 .officer_section {
   background-color: #212121;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/hero-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 950px;
 }

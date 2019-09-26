@@ -1,4 +1,25 @@
 .officer_section {
-	background-color: #212121;
-	
+  background-color: #212121;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/hero-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 950px;
 }
+
+// .sep-top {
+//   background-image: url(../Images/Sep-top.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 100%;
+//   height: 211px;
+// }
+
+.officer__title {
+  @extend %title-section-white;
+}
+
+.officer__txt {
+  @extend %text-section;
+//   color: $color-white;
+}
+
