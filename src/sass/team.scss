@@ -1,7 +1,36 @@
 .title__team {
   @extend %title-section-blue;
+  margin-bottom: 25px;
+  padding-top: 50px;
 }
 
 .team__text {
+  @extend %text-section;
+  margin-bottom: 65px;
+}
 
+.team__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team__name {
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-blue;
+  margin-bottom: 15px;
+}
+
+
+.team__image {
+  margin-bottom: 20px;
+}
+
+.team__position {
+  font-size: 15px;
+  line-height: 18px;
+  color: $main-color-text;
 }
