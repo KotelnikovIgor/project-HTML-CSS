@@ -1,10 +1,3 @@
-.header-section {
-  background-color: #fafcfe;
-  position: relative;
-  // padding: 20px 0 20px;
-  // padding-top: 50px;
-}
-
 .header {
   margin: 0 auto;
   background-image: url('../Images/hero-01.jpg');
@@ -15,9 +8,7 @@
   background-size: cover;
   background-position: center bottom;
   text-align: center;
-  position: absolute;
 }
-
 
 // @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 //   .header {
@@ -32,7 +23,6 @@
   padding: 0 15px;
   margin-bottom: 250px;
   z-index: 5;
-  position: relative;
   padding-top: 50px;
 }
 
@@ -51,14 +41,13 @@
   font-weight: 400;
 }
 
-.white-logo {
-  position: relative;
-}
+// .white-logo {
+//   position: relative;
+// }
 
 .logo-span::before {
   content: 'Arrow';
   display: flex;
-  // align-items: flex-end;
   padding-top: 4.6rem;
   justify-content: center;
   width: 108px;
@@ -66,8 +55,6 @@
   background-image: url('../Images/Icons/white\ icon.png');
   background-repeat: no-repeat;
   margin: 0 auto;
-  // position: absolute;
-  // margin-top: 10px;
 }
 
 .logo-span {
