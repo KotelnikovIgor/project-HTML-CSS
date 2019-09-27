@@ -952,7 +952,7 @@ p.footer-text {
 
 .clients {
   padding-top: 65px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .clients-title {
@@ -966,7 +966,6 @@ p.footer-text {
   padding: 0 15px;
   align-items: center;
   margin-bottom: 55px;
-  height: 45px;
   position: relative;
 }
 
@@ -982,10 +981,6 @@ p.footer-text {
   background-color: #2980b9;
 }
 
-.clients__list {
-  cursor: auto;
-}
-
 .clients__item::after {
   display: block;
   content: '';
@@ -994,7 +989,7 @@ p.footer-text {
   height: 30px;
   background-image: url("../images/Arrow.png");
   background-repeat: no-repeat;
-  transform: rotate(135deg);
+  opacity: 0;
 }
 
 .clients__item:hover::after {

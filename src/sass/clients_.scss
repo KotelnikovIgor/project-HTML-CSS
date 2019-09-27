@@ -1,6 +1,6 @@
 .clients {
   padding-top: 65px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .clients-title {
@@ -15,7 +15,7 @@
   padding: 0 15px;
   align-items: center;
   margin-bottom: 55px;
-  height: 45px;
+  // height: 45px;
   position: relative;
 
   &::after {
@@ -31,9 +31,6 @@
   }
 }
 
-.clients__list {
-  cursor: auto;
-}
 
 .clients__item::after {
   display: block;
@@ -41,10 +38,10 @@
   margin: 0 auto;
   width: 15px;
   height: 30px;
-  background-image: url('../images/Arrow.png');
+  background-image: url('../images/clients/');
   background-repeat: no-repeat;
-  transform: rotate(135deg);
-  // opacity: 0;
+  // transform: rotate(135deg);
+  opacity: 0;
 }
 
 .clients__item:hover::after {
