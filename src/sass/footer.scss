@@ -1,10 +1,5 @@
-// .footer-section {
-//   background-color: #fafcfe;
-//   position: relative;
-// }
-
 .footer {
-  background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url('./images/cont.jpg');
+  background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url('../images/footer/cont.jpg');
   background-size: auto;
   clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
   min-height: 750px;
@@ -15,6 +10,7 @@
   background-size: cover;
   background-position: center top;
   text-align: center;
+  color: $color-white;
 }
 
 .footer-title {
@@ -25,7 +21,6 @@
 
 p.footer-text {
   @extend %text-section;
-  color: $color-white;
   font-weight: 300;
   margin-bottom: 75px;
 }
@@ -36,10 +31,7 @@ p.footer-text {
   text-decoration: none;
   justify-content: space-between;
   padding: 0 83px;
-}
-
-.footer__item {
-  padding-top: 85px;
+  margin-bottom: 94px;
 }
 
 .footer__link {
@@ -47,19 +39,61 @@ p.footer-text {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  bottom: 0;
+  margin-bottom: 14px;
 }
 
-.icon1 {
-  background-image: url('./images/Icons/footer/1.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 67px;
-  width: 67px;
+.link__text {
+  font-size: 15px;
 }
 
 .icon1::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
   width: 67px;
   height: 67px;
-  background-image: url('./images')
+  background-image: url('../images/footer/footer-icon1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon2::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 67px;
+  height: 67px;
+  background-image: url('../images/footer/footer-icon2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon3::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 67px;
+  height: 67px;
+  background-image: url('../images/footer/footer-icon3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon4::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 67px;
+  height: 67px;
+  background-image: url('../images/footer/footer-icon4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.footer-final-text {
+  font-size: 15px;
 }

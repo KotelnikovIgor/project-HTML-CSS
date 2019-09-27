@@ -1,6 +1,6 @@
 .header {
   margin: 0 auto;
-  background-image: url('../images/hero-01.jpg');
+  background-image: url('../images/header/hero-01.jpg');
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   background-repeat: no-repeat;
   width: 100%;
@@ -48,7 +48,7 @@
   justify-content: center;
   width: 108px;
   height: 86px;
-  background-image: url('../images/icons/white\ icon.png');
+  background-image: url('../images/header/white\ icon.png');
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -92,7 +92,7 @@
   content: '';
   width: 32px;
   height: 40px;
-  background-image: url('./images/Icons/mouse_scrolling-50.png');
+  background-image: url('../images/header/mouse_scrolling-50.png');
   background-repeat: no-repeat;
   background: cover;
   position: absolute;

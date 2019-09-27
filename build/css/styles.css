@@ -471,7 +471,8 @@ template {
   box-sizing: border-box;
 }
 
-img {
+img,
+a {
   display: block;
   width: 100%;
   height: auto;
@@ -512,7 +513,7 @@ button {
 
 .header {
   margin: 0 auto;
-  background-image: url("../images/hero-01.jpg");
+  background-image: url("../images/header/hero-01.jpg");
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   background-repeat: no-repeat;
@@ -555,7 +556,7 @@ button {
   justify-content: center;
   width: 108px;
   height: 86px;
-  background-image: url("../images/icons/white icon.png");
+  background-image: url("../images/header/white icon.png");
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -599,7 +600,7 @@ button {
   content: '';
   width: 32px;
   height: 40px;
-  background-image: url("./images/Icons/mouse_scrolling-50.png");
+  background-image: url("../images/header/mouse_scrolling-50.png");
   background-repeat: no-repeat;
   background: cover;
   position: absolute;
@@ -906,7 +907,7 @@ p.footer-text {
   margin: 0 auto;
   width: 15px;
   height: 30px;
-  background-image: url("./images/Arrow.png");
+  background-image: url("../images/clients/Arrow.png");
   background-repeat: no-repeat;
   transform: rotate(135deg);
   opacity: 0;
@@ -952,7 +953,7 @@ p.footer-text {
 
 .clients__ctrl-prev {
   left: 0;
-  background-image: url("./images/Icons/left arrow.png");
+  background-image: url("../images/clients/left arrow.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -960,14 +961,14 @@ p.footer-text {
 
 .clients__ctrl-next {
   right: 0;
-  background-image: url("./images/Icons/right arrow.png");
+  background-image: url("../images/clients/right arrow.png");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
 }
 
 .footer {
-  background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url("./images/cont.jpg");
+  background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url("../images/footer/cont.jpg");
   background-size: auto;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
   clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
@@ -979,6 +980,7 @@ p.footer-text {
   background-size: cover;
   background-position: center top;
   text-align: center;
+  color: #ffffff;
 }
 
 .footer-title {
@@ -987,7 +989,6 @@ p.footer-text {
 }
 
 p.footer-text {
-  color: #ffffff;
   font-weight: 300;
   margin-bottom: 75px;
 }
@@ -998,10 +999,7 @@ p.footer-text {
   text-decoration: none;
   justify-content: space-between;
   padding: 0 83px;
-}
-
-.footer__item {
-  padding-top: 85px;
+  margin-bottom: 94px;
 }
 
 .footer__link {
@@ -1009,19 +1007,61 @@ p.footer-text {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  bottom: 0;
+  margin-bottom: 14px;
 }
 
-.icon1 {
-  background-image: url("./images/Icons/footer/1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 67px;
-  width: 67px;
+.link__text {
+  font-size: 15px;
 }
 
 .icon1::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
   width: 67px;
   height: 67px;
-  background-image: url("./images");
+  background-image: url("../images/footer/footer-icon1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon2::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 67px;
+  height: 67px;
+  background-image: url("../images/footer/footer-icon2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon3::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 67px;
+  height: 67px;
+  background-image: url("../images/footer/footer-icon3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon4::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 67px;
+  height: 67px;
+  background-image: url("../images/footer/footer-icon4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.footer-final-text {
+  font-size: 15px;
 }
