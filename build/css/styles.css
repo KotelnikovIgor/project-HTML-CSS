@@ -859,24 +859,20 @@ p.footer-text {
 }
 
 .offices-section {
-  background: #fafcfe;
-}
-
-.offices {
   width: 100%;
   min-height: 960px;
-  background-color: #5f3b3b;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/hero-03.jpg");
+  background-color: #212121;
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-03.jpg");
   background-repeat: no-repeat;
-  background-size: cover, auto;
-  background-position: center, center 446px;
-  padding: 274px 0;
+  background-size: cover;
+  background-position: center;
+  padding-top: 274px;
 }
 
-.map {
-  background-image: url("../Images/World_atlas.png");
+.world-atlas {
+  background-image: url("../images/World_atlas.png");
   width: 750px;
   height: 353px;
   background-repeat: no-repeat;
@@ -892,6 +888,66 @@ p.footer-text {
 .offices__txt {
   color: #ffffff;
   margin-bottom: 64px;
+}
+
+.world-atlas__list {
+  list-style: none;
+  position: relative;
+}
+
+.world-atlas__item {
+  display: inline-block;
+  height: 30px;
+  min-width: 100px;
+}
+
+.country {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: bold;
+  height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 25px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.world-atlas__item::before {
+  display: inline-block;
+  content: "";
+  height: 30px;
+  width: 18px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.usa {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 140px;
+  top: 120px;
+}
+
+.Spain {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 340px;
+  top: 100px;
+}
+
+.ukraine {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 412px;
+  top: 95px;
 }
 
 .clients {
