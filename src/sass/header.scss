@@ -1,14 +1,13 @@
 .header {
   margin: 0 auto;
-  background-image: url('../Images/Images/Sep-bot-min.jpg');
+  background-image: url('../Images/hero-01.jpg');
+  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   background-repeat: no-repeat;
   width: 100%;
-  height: 960px;
+  min-height: 960px;
   background-size: cover;
   background-position: center bottom;
   text-align: center;
-  padding-top: 50px;
-  position: relative;
 }
 
 // @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -23,6 +22,8 @@
   justify-content: space-between;
   padding: 0 15px;
   margin-bottom: 250px;
+  z-index: 5;
+  padding-top: 50px;
 }
 
 .nav__list {
@@ -40,14 +41,13 @@
   font-weight: 400;
 }
 
-.white-logo {
-  position: relative;
-}
+// .white-logo {
+//   position: relative;
+// }
 
 .logo-span::before {
   content: 'Arrow';
   display: flex;
-  // align-items: flex-end;
   padding-top: 4.6rem;
   justify-content: center;
   width: 108px;
@@ -55,8 +55,6 @@
   background-image: url('../Images/Icons/white\ icon.png');
   background-repeat: no-repeat;
   margin: 0 auto;
-  // position: absolute;
-  // margin-top: 10px;
 }
 
 .logo-span {
