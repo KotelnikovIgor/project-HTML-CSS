@@ -648,6 +648,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.team__text,
 .clients__text-first,
 p.footer-text {
   margin: 0 auto;
@@ -657,10 +658,13 @@ p.footer-text {
 
 .services {
   padding-bottom: 20px;
+  background: #fafcfe;
+  width: 100%;
 }
 
 .title__services {
   margin-bottom: 65px;
+  padding-top: 50px;
 }
 
 .services__items {
@@ -710,15 +714,20 @@ p.footer-text {
   margin-bottom: 65px;
 }
 
+.background_color {
+  background: #fafcfe;
+}
+
 .portfolio {
   width: 100%;
-  height: 990px;
-  background-color: #2980b9;
-  background-image: url("../images/portfolio.JPG");
+  min-height: 990px;
+  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url(".s./images/portfolio.JPG");
+  -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
+  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 65px;
+  padding-bottom: 65px;
 }
 
 .portfolio__items {
@@ -773,6 +782,82 @@ p.footer-text {
 
 .portfolio__item:hover .overlay__text {
   opacity: 1;
+}
+
+.section__team {
+  background: #fafcfe;
+}
+
+.title__team {
+  margin-bottom: 25px;
+  padding-top: 50px;
+}
+
+.team__text {
+  margin-bottom: 65px;
+}
+
+.team__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  position: relative;
+}
+
+.team__item:hover .overlay__team {
+  opacity: 1;
+}
+
+.team__name {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2980b9;
+  margin-bottom: 15px;
+}
+
+.team__image {
+  margin-bottom: 20px;
+}
+
+.team__position {
+  font-size: 15px;
+  line-height: 18px;
+  color: #616161;
+}
+
+.overlay__team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(41, 128, 185, 0.6);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.overlay__item-button {
+  position: relative;
+  text-align: center;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 15px;
+  background-color: #ffffff;
+}
+
+.orerlay__team__icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  fill: #2980b9;
 }
 
 .clients {
