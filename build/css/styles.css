@@ -482,6 +482,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   color: #616161;
+  background: #fafcfe;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -508,7 +509,7 @@ input[type="radio"].visually-hidden {
 
 .header {
   margin: 0 auto;
-  background-image: url("../Images/hero-01.jpg");
+  background-image: url("../images/hero-01.jpg");
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   background-repeat: no-repeat;
@@ -551,7 +552,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   width: 108px;
   height: 86px;
-  background-image: url("../Images/Icons/white icon.png");
+  background-image: url("../images/icon/white icon.png");
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -595,7 +596,7 @@ input[type="radio"].visually-hidden {
   content: '';
   width: 32px;
   height: 40px;
-  background-image: url("../Images/Icons/mouse_scrolling-50.png");
+  background-image: url("../images/icon/mouse_scrolling-50.png");
   background-repeat: no-repeat;
   background: cover;
   position: absolute;
@@ -661,7 +662,6 @@ p.footer-text {
 
 .services {
   padding-bottom: 20px;
-  background: #fafcfe;
   width: 100%;
 }
 
@@ -717,14 +717,10 @@ p.footer-text {
   margin-bottom: 65px;
 }
 
-.background_color {
-  background: #fafcfe;
-}
-
 .portfolio {
   width: 100%;
   min-height: 990px;
-  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url(".s./images/portfolio.JPG");
+  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio.JPG");
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   background-repeat: no-repeat;
@@ -781,14 +777,11 @@ p.footer-text {
   background-position: center;
   margin: 0 auto;
   margin-top: 35px;
+  cursor: pointer;
 }
 
 .portfolio__item:hover .overlay__text {
   opacity: 1;
-}
-
-.section__team {
-  background: #fafcfe;
 }
 
 .title__team {
@@ -854,9 +847,11 @@ p.footer-text {
   border-radius: 50%;
   margin-left: 15px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .orerlay__team__icon {
+  text-align: center;
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -864,24 +859,20 @@ p.footer-text {
 }
 
 .offices-section {
-  background: #fafcfe;
-}
-
-.offices {
   width: 100%;
   min-height: 960px;
-  background-color: #5f3b3b;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/hero-03.jpg");
+  background-color: #212121;
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-03.jpg");
   background-repeat: no-repeat;
-  background-size: cover, auto;
-  background-position: center, center 446px;
-  padding: 274px 0;
+  background-size: cover;
+  background-position: center;
+  padding-top: 274px;
 }
 
-.map {
-  background-image: url("../Images/World_atlas.png");
+.world-atlas {
+  background-image: url("../images/World_atlas.png");
   width: 750px;
   height: 353px;
   background-repeat: no-repeat;
@@ -897,6 +888,66 @@ p.footer-text {
 .offices__txt {
   color: #ffffff;
   margin-bottom: 64px;
+}
+
+.world-atlas__list {
+  list-style: none;
+  position: relative;
+}
+
+.world-atlas__item {
+  display: inline-block;
+  height: 30px;
+  min-width: 100px;
+}
+
+.country {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: bold;
+  height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 25px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.world-atlas__item::before {
+  display: inline-block;
+  content: "";
+  height: 30px;
+  width: 18px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.usa {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 140px;
+  top: 120px;
+}
+
+.Spain {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 340px;
+  top: 100px;
+}
+
+.ukraine {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 412px;
+  top: 95px;
 }
 
 .clients {
@@ -941,7 +992,7 @@ p.footer-text {
   margin: 0 auto;
   width: 15px;
   height: 30px;
-  background-image: url("../Images/Arrow.png");
+  background-image: url("../images/Arrow.png");
   background-repeat: no-repeat;
   transform: rotate(135deg);
 }
@@ -986,18 +1037,20 @@ p.footer-text {
 
 .clients__ctrl-prev {
   left: 0;
-  background-image: url("../Images/Icons/left arrow.png");
+  background-image: url("../images/Icons/left arrow.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .clients__ctrl-next {
   right: 0;
-  background-image: url("../Images/Icons/right arrow.png");
+  background-image: url("../images/Icons/right arrow.png");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .footer {

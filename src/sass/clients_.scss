@@ -27,7 +27,7 @@
     position: absolute;
     bottom: -5px;
     left: 0;
-    background-color: #2980b9;
+    background-color: $color-blue;
   }
 }
 
@@ -41,7 +41,7 @@
   margin: 0 auto;
   width: 15px;
   height: 30px;
-  background-image: url('../Images/Arrow.png');
+  background-image: url('../images/Arrow.png');
   background-repeat: no-repeat;
   transform: rotate(135deg);
   // opacity: 0;
@@ -75,7 +75,7 @@
 }
 
 .mark__span {
-color: $main-color-text;
+  color: $main-color-text;
 }
 
 .clients__ctrl {
@@ -88,16 +88,18 @@ color: $main-color-text;
 
 .clients__ctrl-prev {
   left: 0;
-  background-image: url("../Images/Icons/left\ arrow.png");
+  background-image: url("../images/Icons/left\ arrow.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: $color-white;
 }
 
 .clients__ctrl-next {
   right: 0;
-  background-image: url("../Images/Icons/right\ arrow.png");
+  background-image: url("../images/Icons/right\ arrow.png");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  background-color: $color-white;
 }
