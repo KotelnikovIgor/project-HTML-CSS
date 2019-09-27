@@ -27,7 +27,7 @@
     position: absolute;
     bottom: -5px;
     left: 0;
-    background-color: #2980b9;
+    background-color: $color-blue;
   }
 }
 
@@ -75,7 +75,7 @@
 }
 
 .mark__span {
-color: $main-color-text;
+  color: $main-color-text;
 }
 
 .clients__ctrl {
@@ -92,6 +92,7 @@ color: $main-color-text;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: $color-white;
 }
 
 .clients__ctrl-next {
@@ -100,4 +101,5 @@ color: $main-color-text;
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  background-color: $color-white;
 }

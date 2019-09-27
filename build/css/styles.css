@@ -474,7 +474,7 @@ template {
 img,
 a {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -483,6 +483,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   color: #616161;
+  background: #fafcfe;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -633,6 +634,7 @@ button {
 }
 
 .title__portfolio,
+.offices__title,
 .footer-title {
   font-weight: 700;
   font-size: 25px;
@@ -643,6 +645,7 @@ button {
 }
 
 .title__portfolio::after,
+.offices__title::after,
 .footer-title::after {
   display: block;
   content: '';
@@ -654,6 +657,7 @@ button {
 }
 
 .team__text,
+.offices__txt,
 .clients__text-first,
 p.footer-text {
   margin: 0 auto;
@@ -663,7 +667,6 @@ p.footer-text {
 
 .services {
   padding-bottom: 20px;
-  background: #fafcfe;
   width: 100%;
 }
 
@@ -719,14 +722,10 @@ p.footer-text {
   margin-bottom: 65px;
 }
 
-.background_color {
-  background: #fafcfe;
-}
-
 .portfolio {
   width: 100%;
   min-height: 990px;
-  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url(".s./images/portfolio.JPG");
+  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio.JPG");
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   background-repeat: no-repeat;
@@ -783,14 +782,11 @@ p.footer-text {
   background-position: center;
   margin: 0 auto;
   margin-top: 35px;
+  cursor: pointer;
 }
 
 .portfolio__item:hover .overlay__text {
   opacity: 1;
-}
-
-.section__team {
-  background: #fafcfe;
 }
 
 .title__team {
@@ -856,13 +852,51 @@ p.footer-text {
   border-radius: 50%;
   margin-left: 15px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .orerlay__team__icon {
+  text-align: center;
   display: inline-block;
   width: 30px;
   height: 30px;
   fill: #2980b9;
+}
+
+.offices-section {
+  background: #fafcfe;
+}
+
+.offices {
+  width: 100%;
+  min-height: 960px;
+  background-color: #5f3b3b;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/hero-03.jpg");
+  -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
+  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  background-position: center, center 446px;
+  padding: 274px 0;
+}
+
+.map {
+  background-image: url("../Images/World_atlas.png");
+  width: 750px;
+  height: 353px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding-bottom: 147px;
+}
+
+.offices__title {
+  margin-bottom: 24px;
+}
+
+.offices__txt {
+  color: #ffffff;
+  margin-bottom: 64px;
 }
 
 .clients {
@@ -957,6 +991,7 @@ p.footer-text {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .clients__ctrl-next {
@@ -965,6 +1000,7 @@ p.footer-text {
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .footer {
