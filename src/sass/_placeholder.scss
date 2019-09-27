@@ -35,3 +35,9 @@
     background-color: $color-white;
   }
 }
+
+%text-section {
+  margin: 0 auto;
+  max-width: 360px;
+  text-align: center;
+}
