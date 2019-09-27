@@ -506,9 +506,13 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   margin: 0 auto;
-  background-image: url("../Images/hero-01.jpg");
+  background-image: url("../images/hero-01.jpg");
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   background-repeat: no-repeat;
@@ -551,7 +555,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   width: 108px;
   height: 86px;
-  background-image: url("../Images/Icons/white icon.png");
+  background-image: url("../images/icons/white icon.png");
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -595,7 +599,7 @@ input[type="radio"].visually-hidden {
   content: '';
   width: 32px;
   height: 40px;
-  background-image: url("../Images/Icons/mouse_scrolling-50.png");
+  background-image: url("./images/Icons/mouse_scrolling-50.png");
   background-repeat: no-repeat;
   background: cover;
   position: absolute;
@@ -902,9 +906,10 @@ p.footer-text {
   margin: 0 auto;
   width: 15px;
   height: 30px;
-  background-image: url("../Images/Arrow.png");
+  background-image: url("./images/Arrow.png");
   background-repeat: no-repeat;
   transform: rotate(135deg);
+  opacity: 0;
 }
 
 .clients__item:hover::after {
@@ -947,7 +952,7 @@ p.footer-text {
 
 .clients__ctrl-prev {
   left: 0;
-  background-image: url("../Images/Icons/left arrow.png");
+  background-image: url("./images/Icons/left arrow.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -955,14 +960,14 @@ p.footer-text {
 
 .clients__ctrl-next {
   right: 0;
-  background-image: url("../Images/Icons/right arrow.png");
+  background-image: url("./images/Icons/right arrow.png");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
 }
 
 .footer {
-  background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url("../Images/cont.jpg");
+  background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url("./images/cont.jpg");
   background-size: auto;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
   clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
@@ -995,6 +1000,10 @@ p.footer-text {
   padding: 0 83px;
 }
 
+.footer__item {
+  padding-top: 85px;
+}
+
 .footer__link {
   color: #ffffff;
   font-size: 18px;
@@ -1004,9 +1013,9 @@ p.footer-text {
 }
 
 .icon1 {
-  background-image: url("../Images/Icons/footer/1.png");
+  background-image: url("./images/Icons/footer/1.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   height: 67px;
   width: 67px;
 }
@@ -1014,5 +1023,5 @@ p.footer-text {
 .icon1::before {
   width: 67px;
   height: 67px;
-  background-image: url("../Images/");
+  background-image: url("./images");
 }
