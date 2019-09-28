@@ -506,6 +506,7 @@ input[type="radio"].visually-hidden {
   max-width: 1170px;
   text-align: center;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 button {
@@ -514,8 +515,8 @@ button {
 
 .page-header {
   background-image: url("../images/header/hero-01.jpg");
-  -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
-  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
+  -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0, 50% 0);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0, 50% 0);
   background-repeat: no-repeat;
   width: 100%;
   min-height: 960px;
@@ -524,15 +525,15 @@ button {
 }
 
 .header {
-  padding: 50px 0 54px;
+  padding-top: 36px;
+  padding-bottom: 54px;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
-  margin-bottom: 267px;
+  margin-bottom: 265px;
 }
 
 .nav__list {
@@ -572,7 +573,7 @@ button {
   color: #ffffff;
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .header__button-first {
@@ -596,7 +597,7 @@ button {
   height: 65px;
   border: none;
   background-color: transparent;
-  padding-top: 48px;
+  padding-top: 46px;
   position: relative;
 }
 
@@ -643,7 +644,7 @@ button {
   margin: 0 auto;
   width: 30px;
   height: 5px;
-  margin-top: 16px;
+  margin-top: 9px;
   background-color: #2980b9;
 }
 
@@ -666,7 +667,7 @@ button {
   margin: 0 auto;
   width: 30px;
   height: 5px;
-  margin-top: 16px;
+  margin-top: 9px;
   background-color: #ffffff;
 }
 
@@ -679,34 +680,36 @@ p.footer-text {
   text-align: center;
 }
 
-.services {
-  padding-bottom: 20px;
+.services-section {
   width: 100%;
+}
+
+.services {
+  padding: 55px 0 20px;
 }
 
 .title__services {
   margin-bottom: 65px;
-  padding-top: 50px;
 }
 
 .services__items {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
-  width: 0 auto;
   list-style: none;
 }
 
 .services__item {
-  width: 225px;
+  width: 195px;
+  padding: 0 15px;
 }
 
 .services__item::before {
   display: inline-block;
   content: '';
-  width: 60px;
-  height: 60px;
-  margin-bottom: 16px;
+  width: 66px;
+  height: 65px;
+  margin-bottom: 6px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -728,7 +731,7 @@ p.footer-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .title__portfolio {
@@ -957,8 +960,8 @@ p.footer-text {
   background-image: url(../images/marker-icon.png);
   background-repeat: no-repeat;
   position: absolute;
-  left: 340px;
-  top: 100px;
+  left: 334px;
+  top: 119px;
 }
 
 .ukraine {
@@ -967,6 +970,14 @@ p.footer-text {
   position: absolute;
   left: 412px;
   top: 95px;
+}
+
+.China {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 611px;
+  top: 94px;
 }
 
 .clients {
