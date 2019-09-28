@@ -512,8 +512,7 @@ button {
   cursor: pointer;
 }
 
-.header {
-  margin: 0 auto;
+.page-header {
   background-image: url("../images/header/hero-01.jpg");
   -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 0);
@@ -522,7 +521,10 @@ button {
   min-height: 960px;
   background-size: cover;
   background-position: center bottom;
-  text-align: center;
+}
+
+.header {
+  padding: 50px 0 54px;
 }
 
 .header__nav {
@@ -530,9 +532,7 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
-  margin-bottom: 250px;
-  z-index: 5;
-  padding-top: 50px;
+  margin-bottom: 267px;
 }
 
 .nav__list {
@@ -542,7 +542,7 @@ button {
   justify-content: space-between;
 }
 
-.nav__list a {
+.nav__link {
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
@@ -550,20 +550,20 @@ button {
   font-weight: 400;
 }
 
+.logo-span {
+  font-size: 25px;
+}
+
 .logo-span::before {
   content: 'Arrow';
-  display: flex;
   padding-top: 4.6rem;
-  justify-content: center;
   width: 108px;
   height: 86px;
   background-image: url("../images/header/white icon.png");
   background-repeat: no-repeat;
   margin: 0 auto;
-}
-
-.logo-span {
-  font-size: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-text {
@@ -571,30 +571,44 @@ button {
   line-height: 1.2;
   color: #ffffff;
   width: 700px;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 34px;
 }
 
 .header__button-first {
-  background-color: transparent;
-  color: #ffffff;
-  border: 3px solid #ffffff;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
   width: 156px;
   height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
   margin-bottom: 228px;
 }
 
 .header__button-second {
-  background-color: transparent;
-  text-transform: uppercase;
-  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  width: 115px;
+  height: 65px;
   border: none;
-  font-size: 15px;
-  padding-top: 40px;
+  background-color: transparent;
+  padding-top: 48px;
   position: relative;
+}
+
+.scroll__link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header__button-second::before {
@@ -605,7 +619,7 @@ button {
   background-repeat: no-repeat;
   background: cover;
   position: absolute;
-  top: -20%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
