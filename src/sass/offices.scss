@@ -9,7 +9,7 @@
 .offices-section {
   width: 100%;
   min-height: 960px;
-  background-color: #212121;
+  background-color: $color-img-background;
   clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-03.jpg");
   background-repeat: no-repeat;

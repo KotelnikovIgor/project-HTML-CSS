@@ -735,20 +735,24 @@ p.footer-text {
 }
 
 .title__portfolio {
-  padding-top: 250px;
   margin-bottom: 65px;
 }
 
-.portfolio {
+.portfolio-section {
   width: 100%;
   min-height: 990px;
-  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio.JPG");
-  -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
-  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
+  background-color: #212121;
+  -webkit-clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 22%);
+  clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 22%);
+  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-bottom: 65px;
+}
+
+.portfolio {
+  padding-top: 281px;
+  padding-bottom: 211px;
 }
 
 .portfolio__items {
@@ -761,7 +765,6 @@ p.footer-text {
 
 .portfolio__item {
   position: relative;
-  flex-basis: 375px;
 }
 
 .overlay {
@@ -783,22 +786,23 @@ p.footer-text {
   font-size: 25px;
   line-height: 30px;
   color: #ffffff;
-  top: 50px;
-  left: 66px;
+  top: 45px;
+  left: 69px;
+  letter-spacing: 0.2px;
 }
 
 .overlay__text::after {
   display: block;
   content: '';
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: #ffffff;
   background-image: url("../images/plus-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 40px;
   cursor: pointer;
 }
 
