@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
-img {
+img,
+a {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -37,4 +38,8 @@ input[type="radio"].visually-hidden{
   max-width: 1170px;
   text-align: center;
   margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
 }
