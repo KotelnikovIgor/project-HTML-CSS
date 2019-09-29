@@ -582,7 +582,7 @@ button {
   width: 156px;
   height: 40px;
   border: 2px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: transparent;
   color: #ffffff;
   font-size: 15px;
@@ -810,9 +810,13 @@ p.footer-text {
   opacity: 1;
 }
 
+.team {
+  padding-top: 61px;
+  padding-bottom: 15px;
+}
+
 .title__team {
-  margin-bottom: 25px;
-  padding-top: 50px;
+  margin-bottom: 22px;
 }
 
 .team__text {
@@ -822,7 +826,7 @@ p.footer-text {
 .team__items {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -835,15 +839,15 @@ p.footer-text {
   opacity: 1;
 }
 
+.team__image {
+  margin-bottom: 17px;
+}
+
 .team__name {
   font-size: 20px;
   line-height: 24px;
   color: #2980b9;
-  margin-bottom: 15px;
-}
-
-.team__image {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .team__position {
@@ -868,20 +872,22 @@ p.footer-text {
   position: relative;
   text-align: center;
   border: none;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  margin-left: 15px;
   background-color: #ffffff;
   cursor: pointer;
 }
 
+.overlay__item-button:nth-child(n + 2) {
+  margin-left: 12px;
+}
+
 .orerlay__team__icon {
-  text-align: center;
-  display: inline-block;
   width: 30px;
   height: 30px;
   fill: #2980b9;
+  transform: translate(1px, 2px);
 }
 
 .offices-section {
