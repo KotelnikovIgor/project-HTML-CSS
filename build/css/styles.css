@@ -884,6 +884,8 @@ p.footer-text {
 }
 
 .orerlay__team__icon {
+  text-align: center;
+  display: inline-block;
   width: 30px;
   height: 30px;
   fill: #2980b9;
@@ -894,27 +896,30 @@ p.footer-text {
   width: 100%;
   min-height: 960px;
   background-color: #212121;
-  -webkit-clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
-  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-03.jpg");
+  -webkit-clip-path: polygon(100% 63px, 100% 84%, 50% 99%, 0 84%, 0 63px, 50% 22%);
+  clip-path: polygon(100% 63px, 100% 84%, 50% 99%, 0 84%, 0 63px, 50% 22%);
+  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/hero-03.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 274px;
 }
 
-.world-atlas {
+.offices {
+  padding-top: 268px;
+  padding-bottom: 143px;
+}
+
+.world-atlas.world-atlas {
   background-image: url("../images/World_atlas.png");
-  width: 750px;
-  height: 353px;
+  width: 728px;
+  height: 362px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding-bottom: 147px;
 }
 
 .offices__title {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .offices__txt {
@@ -962,32 +967,32 @@ p.footer-text {
   background-image: url(../images/marker-icon.png);
   background-repeat: no-repeat;
   position: absolute;
-  left: 140px;
-  top: 120px;
+  left: 155px;
+  top: 132px;
 }
 
 .Spain {
   background-image: url(../images/marker-icon.png);
   background-repeat: no-repeat;
   position: absolute;
-  left: 334px;
-  top: 119px;
+  left: 327px;
+  top: 117px;
 }
 
 .ukraine {
   background-image: url(../images/marker-icon.png);
   background-repeat: no-repeat;
   position: absolute;
-  left: 412px;
-  top: 95px;
+  left: 400px;
+  top: 90px;
 }
 
 .China {
   background-image: url(../images/marker-icon.png);
   background-repeat: no-repeat;
   position: absolute;
-  left: 611px;
-  top: 94px;
+  left: 540px;
+  top: 134px;
 }
 
 .clients {
