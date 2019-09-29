@@ -674,7 +674,7 @@ button {
 .team__text,
 .offices__txt,
 .clients__text,
-p.footer-text {
+.footer-text {
   margin: 0 auto;
   max-width: 360px;
   text-align: center;
@@ -1108,39 +1108,41 @@ p.footer-text {
   color: #616161;
 }
 
-.footer {
+.page-footer {
   background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url("../images/footer/cont.jpg");
-  background-size: auto;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
-  clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
-  min-height: 750px;
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   text-align: center;
   color: #ffffff;
+  min-height: 750px;
+  width: 100%;
+  background-size: auto;
+  -webkit-clip-path: polygon(100% 9%, 100% 100%, 50% 100%, 0% 100%, 0% 9%, 50% 28%);
+  clip-path: polygon(100% 9%, 100% 100%, 50% 100%, 0% 100%, 0% 9%, 50% 28%);
+  position: absolute;
+}
+
+.footer {
+  padding-top: 269px;
+  padding-bottom: 75px;
 }
 
 .footer-title {
-  padding-top: 210px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
-p.footer-text {
+.footer-text {
   font-weight: 300;
-  margin-bottom: 75px;
+  margin-bottom: 65px;
 }
 
 .footer__list {
-  display: flex;
   list-style: none;
   text-decoration: none;
-  justify-content: space-between;
-  padding: 0 83px;
-  margin-bottom: 94px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 86px;
 }
 
 .footer__link {
@@ -1159,8 +1161,8 @@ p.footer-text {
   display: block;
   margin: 0 auto;
   content: '';
-  width: 67px;
-  height: 67px;
+  width: 60px;
+  height: 60px;
   background-image: url("../images/footer/footer-icon1.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1171,8 +1173,8 @@ p.footer-text {
   display: block;
   margin: 0 auto;
   content: '';
-  width: 67px;
-  height: 67px;
+  width: 60px;
+  height: 60px;
   background-image: url("../images/footer/footer-icon2.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1183,8 +1185,8 @@ p.footer-text {
   display: block;
   margin: 0 auto;
   content: '';
-  width: 67px;
-  height: 67px;
+  width: 60px;
+  height: 60px;
   background-image: url("../images/footer/footer-icon3.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1195,8 +1197,8 @@ p.footer-text {
   display: block;
   margin: 0 auto;
   content: '';
-  width: 67px;
-  height: 67px;
+  width: 60px;
+  height: 60px;
   background-image: url("../images/footer/footer-icon4.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1205,4 +1207,6 @@ p.footer-text {
 
 .footer-final-text {
   font-size: 15px;
+  line-height: 1.2;
+  font-weight: normal;
 }
