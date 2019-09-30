@@ -53,3 +53,17 @@
   line-height: 24px;
   margin-bottom: 22px;
 }
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 767px;
+  }
+
+  .title__services {
+    text-align: center;
+  }
+
+  .portfolio-section {
+    clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 15%);
+  }
+}

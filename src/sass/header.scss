@@ -47,7 +47,7 @@
 .logo-span {
   font-size: 25px;
   // line-height: ;
-  // font-family: 
+  // font-family:
 }
 
 .logo-span::before {
@@ -119,4 +119,9 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+
+
 }
