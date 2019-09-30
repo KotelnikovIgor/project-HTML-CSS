@@ -519,7 +519,6 @@ button {
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0, 50% 0);
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 960px;
   background-size: cover;
   background-position: center bottom;
 }
@@ -571,7 +570,7 @@ button {
   font-size: 18px;
   line-height: 1.2;
   color: #ffffff;
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   margin-bottom: 31px;
 }
@@ -623,6 +622,10 @@ button {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.burger {
+  display: none;
 }
 
 .title__services,
@@ -700,7 +703,7 @@ button {
 }
 
 .services__item {
-  width: 195px;
+  max-width: 195px;
   padding: 0 15px;
 }
 
@@ -740,7 +743,6 @@ button {
 
 .portfolio-section {
   width: 100%;
-  min-height: 990px;
   background-color: #212121;
   -webkit-clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 22%);
   clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 22%);
@@ -748,6 +750,11 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.portfolio__item img {
+  width: 375px;
+  height: 199px;
 }
 
 .portfolio {
@@ -828,7 +835,7 @@ button {
 .team__items {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -864,7 +871,7 @@ button {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 250px;
+  height: 266.15px;
   background-color: rgba(41, 128, 185, 0.6);
   transition: 0.5s ease-in-out;
   opacity: 0;
@@ -896,7 +903,6 @@ button {
 
 .offices-section {
   width: 100%;
-  min-height: 960px;
   background-color: #212121;
   -webkit-clip-path: polygon(100% 63px, 100% 84%, 50% 99%, 0 84%, 0 63px, 50% 22%);
   clip-path: polygon(100% 63px, 100% 84%, 50% 99%, 0 84%, 0 63px, 50% 22%);
@@ -1014,7 +1020,7 @@ button {
   height: 16px;
   background-image: url("../images/clients/Arrow.png");
   background-repeat: no-repeat;
-  margin-top: 15px;
+  margin-top: 24px;
   opacity: 0;
 }
 
@@ -1027,6 +1033,7 @@ button {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  max-width: 1140px;
   margin-bottom: 46px;
   position: relative;
 }
@@ -1047,10 +1054,12 @@ button {
 }
 
 .slider {
-  width: 975px;
+  max-width: 975px;
   margin: 0 auto;
   margin-bottom: 30px;
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .slider__text {
@@ -1058,32 +1067,25 @@ button {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 0 50px;
 }
 
 .clients__ctrl {
-  position: absolute;
   height: 40px;
   width: 26px;
   border: none;
-  top: 30%;
 }
 
 .clients__ctrl-prev {
-  left: 55px;
   background-image: url("../images/clients/left_arrow.png");
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
 
 .clients__ctrl-next {
-  right: 55px;
   background-image: url("../images/clients/right_arrow.png");
   background-position: center;
-  background-size: auto;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
@@ -1114,15 +1116,12 @@ button {
   background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url("../images/footer/cont.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
   text-align: center;
   color: #ffffff;
-  min-height: 750px;
   width: 100%;
   background-size: auto;
   -webkit-clip-path: polygon(100% 9%, 100% 100%, 50% 100%, 0% 100%, 0% 9%, 50% 28%);
   clip-path: polygon(100% 9%, 100% 100%, 50% 100%, 0% 100%, 0% 9%, 50% 28%);
-  position: absolute;
 }
 
 .footer {
@@ -1213,80 +1212,235 @@ button {
   font-weight: normal;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (max-width: 767px) {
+  .nav__list {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8));
+    background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(41, 128, 185, 0.8), rgba(33, 33, 33, 0.8));
+    padding: 20px 20px;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: .9s ease-in-out;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .nav__link {
+    margin-bottom: 15px;
+  }
+
   .page-header {
-    background-image: url("../images/header/hero-01@2x.jpg") no-repeat;
+    -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 0);
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 0);
   }
 
-  .logo-span::before {
-    background-image: url("../images/header/white-icon@2x.png.png") no-repeat;
+  .header__button-first {
+    margin-bottom: 40px;
   }
 
-  .header__button-second::before {
-    background-image: url("../images/header/mouse_scrolling-50@2x.png") no-repeat;
+  .header__nav {
+    margin-bottom: 75px;
   }
 
-  .icon__idea::before {
-    background-image: url("../images/idea-icon@2x.png") no-repeat;
+  .burger {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url("../images/menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
   }
 
-  .icon__design::before {
-    background-image: url("../images/design-icon@2x.png") no-repeat;
+  .services__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .icon__code::before {
-    background-image: url("../images/code-icon@2x.png") no-repeat;
+  .services__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .title__services {
+    margin-bottom: 30px;
   }
 
   .portfolio-section {
-    background-image: url("../images/portfolio_bg@2x.jpg") no-repeat;
+    -webkit-clip-path: polygon(100% 0%, 100% 95%, 50% 100%, 0% 95%, 0% 0%, 50% 6%);
+    clip-path: polygon(100% 0%, 100% 95%, 50% 100%, 0% 95%, 0% 0%, 50% 6%);
   }
 
-  .overlay__text::after {
-    background-image: url("../images/plus-icon@2x.png") no-repeat;
+  .overlay__text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .portfolio {
+    padding-bottom: 100px;
+    padding-top: 130px;
+  }
+
+  .team__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .scroll-atlas {
+    overflow: scroll;
+    overflow-y: hidden;
   }
 
   .offices-section {
-    background-image: url("../images/hero-03@2x.jpg") no-repeat;
+    -webkit-clip-path: polygon(100% 0px, 100% 95%, 50% 99%, 0 95%, 0 0px, 50% 6%);
+    clip-path: polygon(100% 0px, 100% 95%, 50% 99%, 0 95%, 0 0px, 50% 6%);
   }
 
   .offices {
-    background-image: url("../images/World-atlas@2x.png") no-repeat;
+    padding-top: 75px;
+    padding-bottom: 100px;
   }
 
-  .usa .Spain .ukraine .China {
-    background-image: url("../images/marker-icon@2x.png") no-repeat;
+  .team__text {
+    margin-bottom: 35px;
   }
 
-  .clients__item::after {
-    background-image: url("../images/clients/Arrow@2x.png") no-repeat;
+  .scroll-clients {
+    overflow: scroll;
+    overflow-y: hidden;
   }
 
-  .clients__ctrl-prev {
-    background-image: url("../images/clients/left arrow@2x.png") no-repeat;
-  }
-
-  .clients__ctrl-next {
-    background-image: url("../images/clients/left arrow@2x.png") no-repeat;
+  .footer__list {
+    flex-direction: column;
   }
 
   .page-footer {
-    background-image: url("../images/footer/cont@2x.jpg") no-repeat;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 6%);
+    clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 6%);
+  }
+
+  .footer {
+    padding-top: 90px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .page-header {
+    background-image: url("../images/header/hero-01@2x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .logo-span::before {
+    background-image: url("../images/header/white-icon@2x.png.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header__button-second::before {
+    background-image: url("../images/header/mouse_scrolling-50@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .icon__idea::before {
+    background-image: url("../images/idea-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .icon__design::before {
+    background-image: url("../images/design-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .icon__code::before {
+    background-image: url("../images/code-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .portfolio-section {
+    background-image: url("../images/portfolio_bg@2x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .overlay__text::after {
+    background-image: url("../images/plus-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .offices-section {
+    background-image: url("../images/hero-03@2x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .world-atlas.world-atlas {
+    background-image: url("../images/World-atlas@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .usa {
+    background-image: url("../images/marker-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .Spain {
+    background-image: url("../images/marker-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .ukraine {
+    background-image: url("../images/marker-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .China {
+    background-image: url("../images/marker-icon@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .clients__item::after {
+    background-image: url("../images/clients/Arrow@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .clients__ctrl-prev {
+    background-image: url("../images/clients/left arrow@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .clients__ctrl-next {
+    background-image: url("../images/clients/left arrow@2x.png");
+    background-repeat: no-repeat;
+  }
+
+  .page-footer {
+    background-image: url("../images/footer/cont@2x.jpg");
+    background-repeat: no-repeat;
   }
 
   .icon1::before {
-    background-image: url("../images/footer/footer-icon1@2x.png") no-repeat;
+    background-image: url("../images/footer/footer-icon1@2x.png");
+    background-repeat: no-repeat;
   }
 
   .icon2::before {
-    background-image: url("../images/footer/footer-icon2@2x.png") no-repeat;
+    background-image: url("../images/footer/footer-icon2@2x.png");
+    background-repeat: no-repeat;
   }
 
   .icon3::before {
-    background-image: url("../images/footer/footer-icon3@2x.png") no-repeat;
+    background-image: url("../images/footer/footer-icon3@2x.png");
+    background-repeat: no-repeat;
   }
 
   .icon4::before {
-    background-image: url("../images/footer/footer-icon4@2x.png") no-repeat;
+    background-image: url("../images/footer/footer-icon4@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

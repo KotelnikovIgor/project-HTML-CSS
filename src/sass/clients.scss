@@ -16,13 +16,14 @@
   height: 16px;
   background-image: url('../images/clients/Arrow.png');
   background-repeat: no-repeat;
-  margin-top: 15px;
+  margin-top: 24px;
   opacity: 0;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .clients__item::after {
-    background-image: url('../images/clients/Arrow@2x.png') no-repeat;
+    background-image: url('../images/clients/Arrow@2x.png');
+    background-repeat: no-repeat;
   }
 }
 
@@ -30,13 +31,33 @@
   opacity: 1;
 }
 
+// .scroll-clients::-webkit-scrollbar-track
+// {
+// 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+// 	border-radius: 10px;
+// 	background-color: #F5F5F5;
+// }
+
+// .scroll-clients::-webkit-scrollbar
+// {
+// 	width: 12px;
+// 	background-color: #F5F5F5;
+// }
+
+// .scroll-clients::-webkit-scrollbar-thumb
+// {
+// 	border-radius: 10px;
+// 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+// 	background-color: #D62929;
+// }
+
 .clients__list {
   display: flex;
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  max-width: 1140px;
   margin-bottom: 46px;
-
   position: relative;
 
   &::after {
@@ -57,11 +78,13 @@
 }
 
 .slider {
-  width: 975px;
+  max-width: 975px;
   margin: 0 auto;
 
   margin-bottom: 30px;
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .slider__text {
@@ -70,45 +93,42 @@
   line-height: 1.2;
   font-weight: normal;
 
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 0 50px;
 }
 
 .clients__ctrl {
-  position: absolute;
   height: 40px;
   width: 26px;
   border: none;
-  top: 30%;
 }
 
 .clients__ctrl-prev {
-  left: 55px;
   background-image: url("../images/clients/left_arrow.png");
   background-position: center;
-  background-size: contain;
+  // background-size: contain;
   background-repeat: no-repeat;
   background-color: $color-white;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .clients__ctrl-prev {
-    background-image: url('../images/clients/left\ arrow@2x.png') no-repeat;
+    background-image: url('../images/clients/left\ arrow@2x.png');
+    background-repeat: no-repeat;
   }
 }
 
 .clients__ctrl-next {
-  right: 55px;
   background-image: url("../images/clients/right_arrow.png");
   background-position: center;
-  background-size: auto;
+  // background-size: auto;
   background-repeat: no-repeat;
   background-color: $color-white;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .clients__ctrl-next {
-    background-image: url('../images/clients/left\ arrow@2x.png') no-repeat;
+    background-image: url('../images/clients/left\ arrow@2x.png');
+    background-repeat: no-repeat;
   }
 }
 
@@ -132,4 +152,11 @@
 
 .Zuckerberg__txt {
   color: $main-color-text;
+}
+
+@media (max-width: 767px) {
+  .scroll-clients{
+    overflow: scroll;
+    overflow-y: hidden;
+  }
 }

@@ -1,8 +1,7 @@
 .offices-section {
   width: 100%;
-  min-height: 960px;
+  // min-height: 960px;
   background-color: $color-img-background;
-  // clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   clip-path: polygon(100% 63px, 100% 84%, 50% 99%, 0 84%, 0 63px, 50% 22%);
   background-image: $linear-gradient-portfolio, url("../images/hero-03.jpg");
   background-repeat: no-repeat;
@@ -12,7 +11,8 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .offices-section {
-    background-image: url('../images/hero-03@2x.jpg') no-repeat;
+    background-image: url('../images/hero-03@2x.jpg');
+    background-repeat: no-repeat;
   }
 }
 
@@ -31,8 +31,9 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .offices {
-    background-image: url('../images/World-atlas@2x.png') no-repeat;
+  .world-atlas.world-atlas {
+    background-image: url('../images/World-atlas@2x.png');
+    background-repeat: no-repeat;
   }
 }
 
@@ -46,6 +47,7 @@
   color: $color-white;
   margin-bottom: 64px;
 }
+
 
 .world-atlas__list {
   list-style: none;
@@ -123,7 +125,53 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .usa .Spain .ukraine .China {
-    background-image: url('../images/marker-icon@2x.png') no-repeat;
+  .usa {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
   }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .Spain {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .ukraine {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .China {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .scroll-atlas {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .offices-section {
+    clip-path: polygon(100% 0px, 100% 95%, 50% 99%, 0 95%, 0 0px, 50% 6%);
+  }
+
+  .offices {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+
+  .team__text {
+    margin-bottom: 35px;
+  }
+
+
 }
