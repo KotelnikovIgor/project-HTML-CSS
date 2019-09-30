@@ -20,7 +20,7 @@
 }
 
 .services__item {
-  width: 195px;
+  max-width: 195px;
   padding: 0 15px;
 }
 
@@ -52,4 +52,32 @@
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 22px;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 767px;
+  }
+
+  .title__services {
+    text-align: center;
+  }
+
+  .portfolio-section {
+    clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%, 50% 12%);
+  }
+
+  .services__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .services__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .title__services {
+    margin-bottom: 30px;
+  }
 }
