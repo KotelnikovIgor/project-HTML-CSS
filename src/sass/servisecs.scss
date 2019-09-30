@@ -20,7 +20,7 @@
 }
 
 .services__item {
-  width: 195px;
+  max-width: 195px;
   padding: 0 15px;
 }
 
@@ -64,6 +64,20 @@
   }
 
   .portfolio-section {
-    clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 15%);
+    clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%, 50% 12%);
+  }
+
+  .services__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .services__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .title__services {
+    margin-bottom: 30px;
   }
 }
