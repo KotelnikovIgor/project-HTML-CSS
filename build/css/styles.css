@@ -560,7 +560,7 @@ button {
   padding-top: 4.6rem;
   width: 108px;
   height: 86px;
-  background-image: url("../images/header/white icon.png");
+  background-image: url("../images/header/white-icon.png");
   background-repeat: no-repeat;
   margin: 0 auto;
   display: flex;
@@ -716,15 +716,15 @@ button {
 }
 
 .icon__idea::before {
-  background-image: url("../images/idea.png");
+  background-image: url("../images/idea-icon.png");
 }
 
 .icon__design::before {
-  background-image: url("../images/design.png");
+  background-image: url("../images/design-icon.png");
 }
 
 .icon__code::before {
-  background-image: url("../images/code.png");
+  background-image: url("../images/code-icon.png");
 }
 
 .services__name {
@@ -744,7 +744,7 @@ button {
   background-color: #212121;
   -webkit-clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 22%);
   clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 22%);
-  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio_bg.png");
+  background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -912,7 +912,7 @@ button {
 }
 
 .world-atlas.world-atlas {
-  background-image: url("../images/World_atlas.png");
+  background-image: url("../images/World-atlas.png");
   width: 728px;
   height: 362px;
   background-repeat: no-repeat;
@@ -966,7 +966,7 @@ button {
 }
 
 .usa {
-  background-image: url(../images/marker-icon.png);
+  background-image: url("../images/marker-icon.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 155px;
@@ -974,7 +974,7 @@ button {
 }
 
 .Spain {
-  background-image: url(../images/marker-icon.png);
+  background-image: url("../images/marker-icon.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 327px;
@@ -982,7 +982,7 @@ button {
 }
 
 .ukraine {
-  background-image: url(../images/marker-icon.png);
+  background-image: url("../images/marker-icon.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 400px;
@@ -990,7 +990,7 @@ button {
 }
 
 .China {
-  background-image: url(../images/marker-icon.png);
+  background-image: url("../images/marker-icon.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 540px;
@@ -1211,4 +1211,82 @@ button {
   font-size: 15px;
   line-height: 1.2;
   font-weight: normal;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .page-header {
+    background-image: url("../images/header/hero-01@2x.jpg") no-repeat;
+  }
+
+  .logo-span::before {
+    background-image: url("../images/header/white-icon@2x.png.png") no-repeat;
+  }
+
+  .header__button-second::before {
+    background-image: url("../images/header/mouse_scrolling-50@2x.png") no-repeat;
+  }
+
+  .icon__idea::before {
+    background-image: url("../images/idea-icon@2x.png") no-repeat;
+  }
+
+  .icon__design::before {
+    background-image: url("../images/design-icon@2x.png") no-repeat;
+  }
+
+  .icon__code::before {
+    background-image: url("../images/code-icon@2x.png") no-repeat;
+  }
+
+  .portfolio-section {
+    background-image: url("../images/portfolio_bg@2x.jpg") no-repeat;
+  }
+
+  .overlay__text::after {
+    background-image: url("../images/plus-icon@2x.png") no-repeat;
+  }
+
+  .offices-section {
+    background-image: url("../images/hero-03@2x.jpg") no-repeat;
+  }
+
+  .offices {
+    background-image: url("../images/World-atlas@2x.png") no-repeat;
+  }
+
+  .usa .Spain .ukraine .China {
+    background-image: url("../images/marker-icon@2x.png") no-repeat;
+  }
+
+  .clients__item::after {
+    background-image: url("../images/clients/Arrow@2x.png") no-repeat;
+  }
+
+  .clients__ctrl-prev {
+    background-image: url("../images/clients/left arrow@2x.png") no-repeat;
+  }
+
+  .clients__ctrl-next {
+    background-image: url("../images/clients/left arrow@2x.png") no-repeat;
+  }
+
+  .page-footer {
+    background-image: url("../images/footer/cont@2x.jpg") no-repeat;
+  }
+
+  .icon1::before {
+    background-image: url("../images/footer/footer-icon1@2x.png") no-repeat;
+  }
+
+  .icon2::before {
+    background-image: url("../images/footer/footer-icon2@2x.png") no-repeat;
+  }
+
+  .icon3::before {
+    background-image: url("../images/footer/footer-icon3@2x.png") no-repeat;
+  }
+
+  .icon4::before {
+    background-image: url("../images/footer/footer-icon4@2x.png") no-repeat;
+  }
 }

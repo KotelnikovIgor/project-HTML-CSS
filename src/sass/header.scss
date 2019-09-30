@@ -8,23 +8,21 @@
   background-position: center bottom;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .page-header {
+    background-image: url('../images/header/hero-01@2x.jpg') no-repeat;
+  }
+}
+
 .header {
   padding-top: 36px;
   padding-bottom: 54px;
-  // padding-right: 9px;
 }
-
-// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-//   .header {
-//     background: url(../img/header_bg@2x.jpg) no-repeat;
-//   }
-// }
 
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // padding: 0 10px 0 15px;
   margin-bottom: 265px;
 }
 
@@ -46,8 +44,6 @@
 
 .logo-span {
   font-size: 25px;
-  // line-height: ;
-  // font-family: 
 }
 
 .logo-span::before {
@@ -55,12 +51,17 @@
   padding-top: 4.6rem;
   width: 108px;
   height: 86px;
-  background-image: url('../images/header/white\ icon.png');
+  background-image: url('../images/header/white-icon.png');
   background-repeat: no-repeat;
   margin: 0 auto;
-
   display: flex;
   justify-content: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-span::before {
+    background-image: url('../images/header/white-icon@2x.png.png') no-repeat;
+  }
 }
 
 .logo-text {
@@ -119,4 +120,10 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header__button-second::before {
+    background-image: url('../images/header/mouse_scrolling-50@2x.png') no-repeat;
+  }
 }
