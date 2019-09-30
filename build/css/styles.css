@@ -777,6 +777,7 @@ button {
 
 .portfolio__item:hover .overlay {
   background-color: rgba(41, 128, 185, 0.8);
+  transition: .5s ease-in-out;
 }
 
 .overlay__text {
@@ -808,6 +809,7 @@ button {
 
 .portfolio__item:hover .overlay__text {
   opacity: 1;
+  transition: .5s ease-in-out;
 }
 
 .team {
