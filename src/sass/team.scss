@@ -1,0 +1,87 @@
+.section__team {
+  // background: $color-background;
+}
+
+.team {
+  padding-top: 61px;
+  padding-bottom: 15px;
+}
+
+.title__team {
+  @extend %title-section-blue;
+  margin-bottom: 22px;
+}
+
+.team__text {
+  @extend %text-section;
+  margin-bottom: 65px;
+}
+
+.team__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  position: relative;
+
+  &:hover .overlay__team{
+    opacity: 1;
+  }
+}
+
+.team__image {
+  margin-bottom: 17px;
+}
+
+.team__name {
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-blue;
+  margin-bottom: 5px;
+}
+
+.team__position {
+  font-size: 15px;
+  line-height: 18px;
+  color: $main-color-text;
+}
+
+.overlay__team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background-color: $color-team-overlay;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.overlay__item-button {
+  position: relative;
+  text-align: center;
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.overlay__item-button:nth-child(n + 2) {
+  margin-left: 12px;
+}
+
+.orerlay__team__icon {
+  text-align: center;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  fill: $color-blue;
+  transform: translate(1px, 2px);
+}

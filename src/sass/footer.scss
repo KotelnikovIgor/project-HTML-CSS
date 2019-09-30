@@ -1,0 +1,105 @@
+.page-footer {
+  background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url('../images/footer/cont.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  color: $color-white;
+  min-height: 750px;
+  width: 100%;
+  background-size: auto;
+  // clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 21%);
+  clip-path: polygon(100% 9%,100% 100%,50% 100%,0% 100%,0% 9%,50% 28%);
+  position: absolute;
+}
+
+.footer {
+  padding-top: 269px;
+  padding-bottom: 75px;
+}
+
+.footer-title {
+  @extend %title-section-white;
+  margin-bottom: 22px;
+}
+
+.footer-text {
+  @extend %text-section;
+  font-weight: 300;
+  margin-bottom: 65px;
+}
+
+.footer__list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  
+  margin-bottom: 86px;
+}
+
+.footer__link {
+  color: $color-white;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+
+.link__text {
+  font-size: 15px;
+}
+
+.icon1::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('../images/footer/footer-icon1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon2::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('../images/footer/footer-icon2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon3::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('../images/footer/footer-icon3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.icon4::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('../images/footer/footer-icon4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 18px;
+}
+
+.footer-final-text {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: normal;
+}

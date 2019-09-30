@@ -1,0 +1,122 @@
+.page-header {
+  background-image: url('../images/header/hero-01.jpg');
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0, 50% 0);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 960px;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.header {
+  padding-top: 36px;
+  padding-bottom: 54px;
+  // padding-right: 9px;
+}
+
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .header {
+//     background: url(../img/header_bg@2x.jpg) no-repeat;
+//   }
+// }
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 0 10px 0 15px;
+  margin-bottom: 265px;
+}
+
+
+.nav__list {
+  width: 487px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: $color-white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.logo-span {
+  font-size: 25px;
+  // line-height: ;
+  // font-family: 
+}
+
+.logo-span::before {
+  content: 'Arrow';
+  padding-top: 4.6rem;
+  width: 108px;
+  height: 86px;
+  background-image: url('../images/header/white\ icon.png');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: $color-white;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.header__button-first {
+  display: block;
+  margin: 0 auto;
+  width: 156px;
+  height: 40px;
+  border: 2px solid $color-white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: $color-white;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 228px;
+}
+
+.header__button-second {
+  display: block;
+  margin: 0 auto;
+  width: 115px;
+  height: 65px;
+  border: none;
+  background-color: transparent;
+  padding-top: 46px;
+  position: relative;
+}
+
+.scroll__link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header__button-second::before {
+  content: '';
+  width: 32px;
+  height: 40px;
+  background-image: url('../images/header/mouse_scrolling-50.png');
+  background-repeat: no-repeat;
+  background: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
