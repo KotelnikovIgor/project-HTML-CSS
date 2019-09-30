@@ -1,36 +1,32 @@
-// .wrapper {
-//   background-color: rgb(175, 62, 62);
-// }
-
-// .offices-section {
-//   background: #fafcfe;
-// }
-
 .offices-section {
   width: 100%;
   min-height: 960px;
-  background-color: #212121;
-  clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-03.jpg");
+  background-color: $color-img-background;
+  // clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
+  clip-path: polygon(100% 63px, 100% 84%, 50% 99%, 0 84%, 0 63px, 50% 22%);
+  background-image: $linear-gradient-portfolio, url("../images/hero-03.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 274px;
 }
 
-.world-atlas {
+.offices {
+  padding-top: 268px;
+  padding-bottom: 143px;
+}
+
+.world-atlas.world-atlas {
   background-image: url("../images/World_atlas.png");
-  width: 750px;
-  height: 353px;
+  width: 728px;
+  height: 362px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding-bottom: 147px;
 }
 
 .offices__title {
   @extend %title-section-white;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .offices__txt {
@@ -41,6 +37,7 @@
 
 .world-atlas__list {
   list-style: none;
+  
   position: relative;
 }
 
@@ -61,6 +58,7 @@
   text-transform: uppercase;
   padding-left: 25px;
   text-align: left;
+
   display: flex;
   align-items: center;
 }
@@ -72,20 +70,17 @@
   width: 18px;
   top: 0;
   left: 0;
+
   position: absolute;
 }
-
-// .country:hover {
-//   color: $color-blue;
-// }
 
 .usa {
   background-image: url(../images/marker-icon.png);
   background-repeat: no-repeat;
 
   position: absolute;
-  left: 140px;
-  top: 120px;
+  left: 155px;
+  top: 132px;
 }
 
 .Spain {
@@ -93,8 +88,8 @@
   background-repeat: no-repeat;
 
   position: absolute;
-  left: 340px;
-  top: 100px;
+  left: 327px;
+  top: 117px;
 }
 
 .ukraine {
@@ -102,6 +97,15 @@
   background-repeat: no-repeat;
 
   position: absolute;
-  left: 412px;
-  top: 95px;
+  left: 400px;
+  top: 90px;
+}
+
+.China {
+  background-image: url(../images/marker-icon.png);
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 540px;
+  top: 134px;
 }
