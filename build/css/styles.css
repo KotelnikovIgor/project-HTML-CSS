@@ -850,6 +850,7 @@ button {
 
 .team__image {
   margin-bottom: 17px;
+  height: 250px;
 }
 
 .team__name {
@@ -1256,6 +1257,19 @@ button {
     background-position: center;
     background-color: transparent;
     border: none;
+  }
+
+  .wrapper {
+    max-width: 767px;
+  }
+
+  .title__services {
+    text-align: center;
+  }
+
+  .portfolio-section {
+    -webkit-clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%, 50% 12%);
+    clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%, 50% 12%);
   }
 
   .services__items {
