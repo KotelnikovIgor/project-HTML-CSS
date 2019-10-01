@@ -2,7 +2,9 @@
   <div class="header wrapper">
     <nav class="header__nav">
       <a href="" class="site__logo">
-        <img src="./images/header/BLACK icon.png" alt="logo" width="73px" height="43px" />
+        <img srcset="./images/header/BLACK-icon.png 73w, ./images/header/BLACK-icon@2x.png 146w"
+          src="./images/header/BLACK-icon.png" alt=""
+          class="header__iage-logo" sizes="73px" height="43">
       </a>
       <ul class="nav__list">
         <li class="nav__item">
@@ -24,8 +26,11 @@
           <a class="nav__link" href="#footer">Contact</a>
         </li>
       </ul>
+      <button class="burger"></button>
     </nav>
-    <span class="logo-span"></span>
+    <img class="sub__logo" srcset="./images/sub-logo.png 105w, ./images/sub-logo@2x.png 210w"
+    src="./images/sub-logo.png" alt="" sizes="105px" height="121">
+    <!-- <span class="logo-span"></span> -->
     <p class="logo-text">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the

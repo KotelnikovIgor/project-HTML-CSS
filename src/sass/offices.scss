@@ -1,13 +1,19 @@
 .offices-section {
   width: 100%;
-  min-height: 960px;
+  // min-height: 960px;
   background-color: $color-img-background;
-  // clip-path: polygon(100% 0, 100% 79%, 50% 100%, 0 79%, 0 0, 50% 21%);
   clip-path: polygon(100% 63px, 100% 84%, 50% 99%, 0 84%, 0 63px, 50% 22%);
   background-image: $linear-gradient-portfolio, url("../images/hero-03.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .offices-section {
+    background-image: url('../images/hero-03@2x.jpg');
+    background-repeat: no-repeat;
+  }
 }
 
 .offices {
@@ -16,12 +22,19 @@
 }
 
 .world-atlas.world-atlas {
-  background-image: url("../images/World_atlas.png");
+  background-image: url("../images/World-atlas.png");
   width: 728px;
   height: 362px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .world-atlas.world-atlas {
+    background-image: url('../images/World-atlas@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .offices__title {
@@ -35,9 +48,10 @@
   margin-bottom: 64px;
 }
 
+
 .world-atlas__list {
   list-style: none;
-  
+
   position: relative;
 }
 
@@ -75,7 +89,7 @@
 }
 
 .usa {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
@@ -84,7 +98,7 @@
 }
 
 .Spain {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
@@ -93,7 +107,7 @@
 }
 
 .ukraine {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
@@ -102,10 +116,77 @@
 }
 
 .China {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
   left: 540px;
   top: 134px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .usa {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .Spain {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .ukraine {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .China {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .scroll-atlas {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
+  .scroll-atlas::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+
+  .scroll-atlas::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+
+  .scroll-atlas::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #616161;
+  }
+}
+
+@media (max-width: 767px) {
+  .offices-section {
+    clip-path: polygon(100% 0px, 100% 95%, 50% 99%, 0 95%, 0 0px, 50% 6%);
+  }
+
+  .offices {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+
+  .team__text {
+    margin-bottom: 35px;
+  }
 }
