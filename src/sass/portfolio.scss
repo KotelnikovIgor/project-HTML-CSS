@@ -8,10 +8,18 @@
   // min-height: 990px;
   background-color: $color-img-background;
   clip-path: polygon(100% 8%, 100% 85%, 50% 100%, 0% 85%, 0% 8%, 50% 22%);
-  background-image: $linear-gradient-portfolio, url("../images/portfolio_bg.png");
+  // background-image: $linear-gradient-portfolio, url("../images/portfolio.JPG");
+  background-image: $linear-gradient-portfolio, url("../images/portfolio_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .portfolio-section {
+    background-image: url('../images/portfolio_bg@2x.jpg');
+    background-repeat: no-repeat;
+  }
 }
 
 .portfolio__item img {
@@ -76,6 +84,13 @@
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .overlay__text::after {
+    background-image: url('../images/plus-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
 .portfolio__item:hover .overlay__text {
   opacity: 1;
   transition: .5s ease-in-out;
@@ -86,6 +101,7 @@
   .portfolio-section {
     clip-path: polygon(100% 0%, 100% 95%, 50% 100%, 0% 95%, 0% 0%, 50% 6%);
   }
+
   .overlay__text {
     top: 50%;
     left: 50%;
@@ -96,8 +112,4 @@
     padding-bottom: 100px;
     padding-top: 130px;
   }
-
-
-
-  
 }

@@ -36,15 +36,36 @@
 }
 
 .icon__idea::before {
-  background-image: url("../images/idea.png");
+  background-image: url("../images/idea-icon.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon__idea::before {
+    background-image: url('../images/idea-icon@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .icon__design::before {
-  background-image: url("../images/design.png");
+  background-image: url("../images/design-icon.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon__design::before {
+    background-image: url('../images/design-icon@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .icon__code::before {
-  background-image: url("../images/code.png");
+  background-image: url("../images/code-icon.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon__code::before {
+    background-image: url('../images/code-icon@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .services__name {

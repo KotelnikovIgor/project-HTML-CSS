@@ -9,6 +9,13 @@
   background-position: center bottom;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .page-header {
+    background-image: url('../images/header/hero-01@2x.jpg');
+    background-repeat: no-repeat;
+  }
+}
+
 .header {
   padding-top: 36px;
   padding-bottom: 54px;
@@ -36,22 +43,23 @@
   font-weight: 400;
 }
 
-.logo-span {
-  font-size: 25px;
-}
-
-.logo-span::before {
-  content: 'Arrow';
-  padding-top: 4.6rem;
-  width: 108px;
-  height: 86px;
-  background-image: url('../images/header/white\ icon.png');
-  background-repeat: no-repeat;
+.sub__logo {
   margin: 0 auto;
-
-  display: flex;
-  justify-content: center;
+  margin-bottom: 40px;
 }
+
+// .logo-span::before {
+//   content: 'Arrow';
+//   padding-top: 4.6rem;
+//   width: 108px;
+//   height: 86px;
+//   background-image: url('../images/header/white\ icon.png');
+//   background-repeat: no-repeat;
+//   margin: 0 auto;
+
+//   display: flex;
+//   justify-content: center;
+// }
 
 .logo-text {
   font-size: 18px;
@@ -111,6 +119,14 @@
   transform: translateX(-50%);
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header__button-second::before {
+    background-image: url('../images/header/mouse_scrolling-50@2x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .burger {
   display: none;
 }
@@ -154,7 +170,7 @@
     display: block;
     width: 80px;
     height: 80px;
-    background-image: url(../images/menu.png);
+    background-image: url('../images/menu.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
