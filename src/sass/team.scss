@@ -17,12 +17,12 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .team__item {
   position: relative;
+  padding-bottom: 15px;
 
   &:hover .overlay__team{
     opacity: 1;
