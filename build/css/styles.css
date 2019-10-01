@@ -550,21 +550,7 @@ button {
   font-weight: 400;
 }
 
-<<<<<<< HEAD
-.logo-span {
-  font-size: 25px;
-}
-
-.logo-span::before {
-  content: 'Arrow';
-  padding-top: 4.6rem;
-  width: 108px;
-  height: 86px;
-  background-image: url("../images/header/white-icon.png");
-  background-repeat: no-repeat;
-=======
 .sub__logo {
->>>>>>> Igor
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -1414,12 +1400,6 @@ button {
     background-repeat: no-repeat;
   }
 
-  .logo-span::before {
-    background-image: url("../images/header/white-icon@2x.png.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   .header__button-second::before {
     background-image: url("../images/header/mouse_scrolling-50@2x.png");
     background-repeat: no-repeat;
@@ -1433,11 +1413,6 @@ button {
 
   .icon__design::before {
     background-image: url("../images/design-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .icon__code::before {
-    background-image: url("../images/code-icon@2x.png");
     background-repeat: no-repeat;
   }
 
@@ -1520,5 +1495,12 @@ button {
     background-image: url("../images/footer/footer-icon4@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (-webdit-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon__code::before {
+    background-image: url("../images/code-icon@2x.png");
+    background-repeat: no-repeat;
   }
 }
