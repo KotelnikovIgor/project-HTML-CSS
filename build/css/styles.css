@@ -550,21 +550,7 @@ button {
   font-weight: 400;
 }
 
-<<<<<<< HEAD
-.logo-span {
-  font-size: 25px;
-}
-
-.logo-span::before {
-  content: 'Arrow';
-  padding-top: 4.6rem;
-  width: 108px;
-  height: 86px;
-  background-image: url("../images/header/white-icon.png");
-  background-repeat: no-repeat;
-=======
 .sub__logo {
->>>>>>> Igor
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -1024,8 +1010,24 @@ button {
   height: 16px;
   background-image: url("../images/clients/Arrow.png");
   background-repeat: no-repeat;
-  margin-top: 24px;
+  margin-top: 15px;
   opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -31px;
+}
+
+.clients__item {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.clients__image {
+  align-items: center;
 }
 
 .clients__item:hover::after {
@@ -1121,6 +1123,7 @@ button {
 .scroll-clients {
   overflow: auto;
   overflow-y: hidden;
+  margin-bottom: 25px;
 }
 
 .scroll-clients::-webkit-scrollbar-track {
@@ -1132,6 +1135,7 @@ button {
 .scroll-clients::-webkit-scrollbar {
   width: 12px;
   background-color: #F5F5F5;
+  height: 8px;
 }
 
 .scroll-clients::-webkit-scrollbar-thumb {
@@ -1258,6 +1262,11 @@ button {
     padding-bottom: 150px;
   }
 
+  .nav__list_active {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
   .nav__link {
     margin-bottom: 15px;
   }
@@ -1351,7 +1360,9 @@ button {
 
   .scroll-atlas::-webkit-scrollbar {
     width: 12px;
+    border-radius: 10px;
     background-color: #F5F5F5;
+    height: 8px;
   }
 
   .scroll-atlas::-webkit-scrollbar-thumb {
@@ -1414,12 +1425,6 @@ button {
     background-repeat: no-repeat;
   }
 
-  .logo-span::before {
-    background-image: url("../images/header/white-icon@2x.png.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   .header__button-second::before {
     background-image: url("../images/header/mouse_scrolling-50@2x.png");
     background-repeat: no-repeat;
@@ -1436,23 +1441,14 @@ button {
     background-repeat: no-repeat;
   }
 
-  .icon__code::before {
-    background-image: url("../images/code-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
   .portfolio-section {
-    background-image: url("../images/portfolio_bg@2x.jpg");
+    background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio_bg@2x.jpg");
     background-repeat: no-repeat;
-  }
-
-  .overlay__text::after {
-    background-image: url("../images/plus-icon@2x.png");
-    background-repeat: no-repeat;
+    background-color: #212121;
   }
 
   .offices-section {
-    background-image: url("../images/hero-03@2x.jpg");
+    background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/hero-03@2x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -1461,43 +1457,8 @@ button {
     background-repeat: no-repeat;
   }
 
-  .usa {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .Spain {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .ukraine {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .China {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .clients__item::after {
-    background-image: url("../images/clients/Arrow@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .clients__ctrl-prev {
-    background-image: url("../images/clients/left arrow@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .clients__ctrl-next {
-    background-image: url("../images/clients/left arrow@2x.png");
-    background-repeat: no-repeat;
-  }
-
   .page-footer {
-    background-image: url("../images/footer/cont@2x.jpg");
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url("../images/footer/cont@2x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -1520,5 +1481,12 @@ button {
     background-image: url("../images/footer/footer-icon4@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (-webdit-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon__code::before {
+    background-image: url("../images/code-icon@2x.png");
+    background-repeat: no-repeat;
   }
 }

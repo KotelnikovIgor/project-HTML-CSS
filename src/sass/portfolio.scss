@@ -17,8 +17,9 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .portfolio-section {
-    background-image: url('../images/portfolio_bg@2x.jpg');
+    background-image: $linear-gradient-portfolio, url('../images/portfolio_bg@2x.jpg');
     background-repeat: no-repeat;
+    background-color: $color-img-background;
   }
 }
 
@@ -84,12 +85,13 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .overlay__text::after {
-    background-image: url('../images/plus-icon@2x.png');
-    background-repeat: no-repeat;
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .overlay__text::after {
+//     background-image: url('../images/plus-icon@2x.png');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
+// }
 
 .portfolio__item:hover .overlay__text {
   opacity: 1;
