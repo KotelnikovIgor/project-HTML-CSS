@@ -7,9 +7,7 @@
   color: $color-white;
   // min-height: 750px;
   width: 100%;
-  background-size: auto;
   clip-path: polygon(100% 9%, 100% 100%, 50% 100%, 0% 100%, 0% 9%, 50% 28%);
-  // position: absolute;
 }
 
 .footer {
@@ -113,6 +111,9 @@
 
   .footer {
     padding-top: 90px;
-  } 
-  
+  }
+
+  .footer__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

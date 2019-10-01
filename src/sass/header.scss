@@ -127,9 +127,11 @@
     padding: 20px 20px;
     visibility: hidden;
     transform: translateX(100%);
-    transition: .9s ease-in-out;
+    transition: 4s ease-in-out;
     flex-direction: column;
+    justify-content: space-around;
     z-index: 10;
+    padding-bottom: 150px;
   }
 
   .nav__link {
@@ -141,7 +143,7 @@
   }
 
   .header__button-first {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   .header__nav {
@@ -158,5 +160,9 @@
     background-position: center;
     background-color: transparent;
     border: none;
+  }
+
+  .header {
+    padding-bottom: 70px;
   }
 }

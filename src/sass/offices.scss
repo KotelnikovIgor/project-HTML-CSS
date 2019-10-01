@@ -37,7 +37,7 @@
 
 .world-atlas__list {
   list-style: none;
-  
+
   position: relative;
 }
 
@@ -112,7 +112,7 @@
 
 @media (max-width: 767px) {
   .scroll-atlas {
-    overflow: scroll; 
+    overflow: scroll;
     overflow-y: hidden;
   }
 }
@@ -130,6 +130,4 @@
   .team__text {
     margin-bottom: 35px;
   }
-
-
 }
