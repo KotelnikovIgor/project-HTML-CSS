@@ -9,18 +9,32 @@
   background-position: center;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .offices-section {
+    background-image: url('../images/hero-03@2x.jpg');
+    background-repeat: no-repeat;
+  }
+}
+
 .offices {
   padding-top: 268px;
   padding-bottom: 143px;
 }
 
-.world-atlas {
-  background-image: url("../images/World_atlas.png");
+.world-atlas.world-atlas {
+  background-image: url("../images/World-atlas.png");
   width: 728px;
   height: 362px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .world-atlas.world-atlas {
+    background-image: url('../images/World-atlas@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .offices__title {
@@ -75,7 +89,7 @@
 }
 
 .usa {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
@@ -84,7 +98,7 @@
 }
 
 .Spain {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
@@ -93,7 +107,7 @@
 }
 
 .ukraine {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
@@ -102,12 +116,40 @@
 }
 
 .China {
-  background-image: url(../images/marker-icon.png);
+  background-image: url('../images/marker-icon.png');
   background-repeat: no-repeat;
 
   position: absolute;
   left: 540px;
   top: 134px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .usa {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .Spain {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .ukraine {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .China {
+    background-image: url('../images/marker-icon@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 767px) {

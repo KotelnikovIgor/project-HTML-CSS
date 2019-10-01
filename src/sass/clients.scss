@@ -16,8 +16,15 @@
   height: 16px;
   background-image: url('../images/clients/Arrow.png');
   background-repeat: no-repeat;
-  margin-top: 15px;
+  margin-top: 24px;
   opacity: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .clients__item::after {
+    background-image: url('../images/clients/Arrow@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .clients__item:hover::after {
@@ -83,12 +90,26 @@
   background-color: $color-white;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .clients__ctrl-prev {
+    background-image: url('../images/clients/left\ arrow@2x.png');
+    background-repeat: no-repeat;
+  }
+}
+
 .clients__ctrl-next {
   background-image: url("../images/clients/right_arrow.png");
   background-position: center;
   // background-size: auto;
   background-repeat: no-repeat;
   background-color: $color-white;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .clients__ctrl-next {
+    background-image: url('../images/clients/left\ arrow@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .Zuckerberg {
