@@ -19,6 +19,7 @@
   .portfolio-section {
     background-image: $linear-gradient-portfolio, url('../images/portfolio_bg@2x.jpg');
     background-repeat: no-repeat;
+    background-color: $color-img-background;
   }
 }
 
