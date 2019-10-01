@@ -11,7 +11,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .offices-section {
-    background-image: url('../images/hero-03@2x.jpg');
+    background-image: $linear-gradient-portfolio, url('../images/hero-03@2x.jpg');
     background-repeat: no-repeat;
   }
 }
@@ -124,33 +124,33 @@
   top: 134px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .usa {
-    background-image: url('../images/marker-icon@2x.png');
-    background-repeat: no-repeat;
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .usa {
+//     background-image: url('../images/marker-icon@2x.png');
+//     background-repeat: no-repeat;
+//   }
+// }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .Spain {
-    background-image: url('../images/marker-icon@2x.png');
-    background-repeat: no-repeat;
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .Spain {
+//     background-image: url('../images/marker-icon@2x.png');
+//     background-repeat: no-repeat;
+//   }
+// }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .ukraine {
-    background-image: url('../images/marker-icon@2x.png');
-    background-repeat: no-repeat;
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .ukraine {
+//     background-image: url('../images/marker-icon@2x.png');
+//     background-repeat: no-repeat;
+//   }
+// }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .China {
-    background-image: url('../images/marker-icon@2x.png');
-    background-repeat: no-repeat;
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .China {
+//     background-image: url('../images/marker-icon@2x.png');
+//     background-repeat: no-repeat;
+//   }
+// }
 
 @media (max-width: 767px) {
   .scroll-atlas {

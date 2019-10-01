@@ -90,12 +90,12 @@
   background-color: $color-white;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .clients__ctrl-prev {
-    background-image: url('../images/clients/left\ arrow@2x.png');
-    background-repeat: no-repeat;
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .clients__ctrl-prev {
+//     background-image: url('../images/clients/left\ arrow@2x.png');
+//     background-repeat: no-repeat;
+//   }
+// }
 
 .clients__ctrl-next {
   background-image: url("../images/clients/right_arrow.png");
@@ -105,12 +105,12 @@
   background-color: $color-white;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .clients__ctrl-next {
-    background-image: url('../images/clients/left\ arrow@2x.png');
-    background-repeat: no-repeat;
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .clients__ctrl-next {
+//     background-image: url('../images/clients/left\ arrow@2x.png');
+//     background-repeat: no-repeat;
+//   }
+// }
 
 .Zuckerberg {
   display: flex;
