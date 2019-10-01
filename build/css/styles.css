@@ -550,20 +550,9 @@ button {
   font-weight: 400;
 }
 
-.logo-span {
-  font-size: 25px;
-}
-
-.logo-span::before {
-  content: 'Arrow';
-  padding-top: 4.6rem;
-  width: 108px;
-  height: 86px;
-  background-image: url("../images/header/white icon.png");
-  background-repeat: no-repeat;
+.sub__logo {
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .logo-text {
@@ -836,12 +825,12 @@ button {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .team__item {
   position: relative;
+  padding-bottom: 15px;
 }
 
 .team__item:hover .overlay__team {
@@ -1120,6 +1109,23 @@ button {
   overflow-y: hidden;
 }
 
+.scroll-clients::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.scroll-clients::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.scroll-clients::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #616161;
+}
+
 .page-footer {
   background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url("../images/footer/cont.jpg");
   background-repeat: no-repeat;
@@ -1321,6 +1327,23 @@ button {
   .scroll-atlas {
     overflow: scroll;
     overflow-y: hidden;
+  }
+
+  .scroll-atlas::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+
+  .scroll-atlas::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+
+  .scroll-atlas::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #616161;
   }
 
   .offices-section {

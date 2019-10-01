@@ -36,22 +36,23 @@
   font-weight: 400;
 }
 
-.logo-span {
-  font-size: 25px;
-}
-
-.logo-span::before {
-  content: 'Arrow';
-  padding-top: 4.6rem;
-  width: 108px;
-  height: 86px;
-  background-image: url('../images/header/white\ icon.png');
-  background-repeat: no-repeat;
+.sub__logo {
   margin: 0 auto;
-
-  display: flex;
-  justify-content: center;
+  margin-bottom: 40px;
 }
+
+// .logo-span::before {
+//   content: 'Arrow';
+//   padding-top: 4.6rem;
+//   width: 108px;
+//   height: 86px;
+//   background-image: url('../images/header/white\ icon.png');
+//   background-repeat: no-repeat;
+//   margin: 0 auto;
+
+//   display: flex;
+//   justify-content: center;
+// }
 
 .logo-text {
   font-size: 18px;
