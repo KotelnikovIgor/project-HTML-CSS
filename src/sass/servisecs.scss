@@ -61,7 +61,7 @@
   background-image: url("../images/code-icon.png");
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webdit-ratio: 2), (min-resolution: 192dpi) {
   .icon__code::before {
     background-image: url('../images/code-icon@2x.png');
     background-repeat: no-repeat;

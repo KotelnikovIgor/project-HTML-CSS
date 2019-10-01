@@ -11,8 +11,8 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .page-footer {
-    background-image: url('../images/footer/cont@2x.jpg');
+  .page-footer  {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../images/footer/cont@2x.jpg');
     background-repeat: no-repeat;
   }
 }

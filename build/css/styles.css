@@ -1416,24 +1416,14 @@ button {
     background-repeat: no-repeat;
   }
 
-  .icon__code::before {
-    background-image: url("../images/code-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
   .portfolio-section {
-    background-image: url("../images/portfolio_bg@2x.jpg");
+    background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/portfolio_bg@2x.jpg");
     background-repeat: no-repeat;
     background-color: #212121;
   }
 
-  .overlay__text::after {
-    background-image: url("../images/plus-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
   .offices-section {
-    background-image: url("../images/hero-03@2x.jpg");
+    background-image: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("../images/hero-03@2x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -1442,43 +1432,13 @@ button {
     background-repeat: no-repeat;
   }
 
-  .usa {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .Spain {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .ukraine {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .China {
-    background-image: url("../images/marker-icon@2x.png");
-    background-repeat: no-repeat;
-  }
-
   .clients__item::after {
     background-image: url("../images/clients/Arrow@2x.png");
     background-repeat: no-repeat;
   }
 
-  .clients__ctrl-prev {
-    background-image: url("../images/clients/left arrow@2x.png");
-    background-repeat: no-repeat;
-  }
-
-  .clients__ctrl-next {
-    background-image: url("../images/clients/left arrow@2x.png");
-    background-repeat: no-repeat;
-  }
-
   .page-footer {
-    background-image: url("../images/footer/cont@2x.jpg");
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url("../images/footer/cont@2x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -1501,5 +1461,12 @@ button {
     background-image: url("../images/footer/footer-icon4@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (-webdit-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon__code::before {
+    background-image: url("../images/code-icon@2x.png");
+    background-repeat: no-repeat;
   }
 }
